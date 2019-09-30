@@ -15,3 +15,4 @@
 /public/*
 !/public/.htaccess
 node_modules
+packages/typo3_webpack_encore_demo/Resources/Public/
