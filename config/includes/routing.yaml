@@ -1,0 +1,34 @@
+EXTCONF:
+    realurl:
+        _DOMAINS:
+            encode:
+                - { GETvar: L, value: '0', useConfiguration: default.tld, urlPrepend: 'http://%conf(EXTCONF.helhum_site_package.defaultLanguageDomain)%' }
+                - { GETvar: L, value: '1', useConfiguration: default.tld, urlPrepend: 'http://%conf(EXTCONF.helhum_site_package.englishDomain)%' }
+            decode:
+                '%conf(EXTCONF.helhum_site_package.defaultLanguageDomain)%':
+                    GETvars: { L: '0' }
+                    useConfiguration: default.tld
+                '%conf(EXTCONF.helhum_site_package.englishDomain)%':
+                    GETvars: { L: '1' }
+                    useConfiguration: default.tld
+        default.tld:
+            init:
+                enableCHashCache: true
+                appendMissingSlash: 'ifNotFile'
+                adminJumpToBackend: true
+                enableUrlDecodeCache: true
+                enableUrlEncodeCache: true
+                emptyUrlReturnValue: /
+                disableErrorLog: true
+            pagePath:
+                rootpage_id: '1'
+                type: user
+                userFunc: 'Tx\Realurl\UriGeneratorAndResolver->main'
+                spaceCharacter: '-'
+                languageGetVar: 'L'
+                expireDays: 3
+                dontResolveShortcuts: false
+            fileName:
+                defaultToHTMLsuffixOnPrev: false
+        '%conf(EXTCONF.helhum_site_package.englishDomain)%': 'default.tld'
+        '%conf(EXTCONF.helhum_site_package.defaultLanguageDomain)%': 'default.tld'

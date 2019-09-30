@@ -1,0 +1,16 @@
+.DS_Store
+/.idea
+/nbproject
+/vendor
+/var/*
+/.env
+/.php_cs.cache
+
+/config/override.settings.yaml
+/private/*
+!/private/typo3conf
+/private/typo3conf/*
+!/private/typo3conf/l10n
+
+/public/*
+!/public/.htaccess

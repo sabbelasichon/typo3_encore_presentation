@@ -1,0 +1,9 @@
+imports:
+    - { resource: settings.yaml, exclude: [LOG] }
+    - { resource: 'includes/dev/*.yaml', type: glob }
+
+BE:
+    sessionTimeout: 31536000
+MAIL:
+    transport: 'mbox'
+    transport_mbox_file: '%env(TYPO3_PATH_COMPOSER_ROOT)%/var/log/sent-mails.log'

@@ -1,0 +1,18 @@
+{
+  "name": "ssch/typo3-webpack-encore-demo",
+  "type": "typo3-cms-extension",
+  "description" : "An example site package for TYPO3 Webpack Encore",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^7",
+    "typo3/cms-core": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ssch\\SitePackage\\": "Classes/"
+    }
+  },
+  "replace": {
+    "typo3_webpack_encore_demo": "self.version"
+  }
+}
