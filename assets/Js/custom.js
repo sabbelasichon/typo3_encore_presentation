@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap';
 
 $(document).ready(function () {
     // Do you know let and const?
-    var buttons = $('.js-button');
+    const buttons = $('.js-button');
     buttons.on('click', function (e) {
         e.preventDefault();
         alert('Button is clicked');

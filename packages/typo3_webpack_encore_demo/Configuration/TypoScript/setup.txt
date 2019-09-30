@@ -1,4 +1,5 @@
 @import 'EXT:mindshape_cookie_hint/Configuration/TypoScript/setup.txt'
+@import 'EXT:typo3_encore/Configuration/TypoScript/setup.typoscript'
 
 page = PAGE
 page {
@@ -11,9 +12,9 @@ page {
 }
 
 page.includeCSS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/app.css
+    custom = typo3_encore:app
 }
 
 page.includeJS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/app.js
+    custom = typo3_encore:app
 }
