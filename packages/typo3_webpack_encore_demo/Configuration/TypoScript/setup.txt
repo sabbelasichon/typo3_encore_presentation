@@ -11,26 +11,9 @@ page {
 }
 
 page.includeCSS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Css/custom.css
-}
-
-page.includeCSSLibs {
-    bootstrap = https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+    custom = EXT:typo3_webpack_encore_demo/Resources/Public/app.css
 }
 
 page.includeJS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Js/custom.js
-}
-
-page.includeJSLibs {
-    jquery = https://code.jquery.com/jquery-1.12.4.min.js
-    jquery {
-        integrity = sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=
-        crossorigin = anonymous
-    }
-    bootstrap = https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
-    bootstrap {
-        integrity = sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM
-        crossorigin = anonymous
-    }
+    custom = EXT:typo3_webpack_encore_demo/Resources/Public/app.js
 }
