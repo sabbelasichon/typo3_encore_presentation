@@ -9,6 +9,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .enableVueLoader()
     .enablePostCssLoader()
+    .enableSassLoader()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
     .autoProvidejQuery();

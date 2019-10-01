@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+
+$green: #85E20F;
+
+body {
+    margin: 20px 0;
+    background-color: $green;
+}
+
+/* Manual prefixing, this is nice */
+.flex-example {
+    display: flex;
+}
