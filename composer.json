@@ -36,7 +36,8 @@
         "typo3/cms-rte-ckeditor": "^9.5.7",
         "typo3/cms-setup": "^9.5.7",
         "typo3/cms-tstemplate": "^9.5.7",
-        "typo3/cms-viewpage": "^9.5.7"
+        "typo3/cms-viewpage": "^9.5.7",
+        "ext-json": "*"
     },
     "require-dev": {
         "helhum/dotenv-connector": "^2.0",

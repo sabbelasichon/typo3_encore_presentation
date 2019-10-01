@@ -1,0 +1,12 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:e="http://typo3.org/ns/Ssch/Typo3Encore/ViewHelpers"
+      xmlns:ssch="http://typo3.org/ns/Ssch/SitePackage/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<e:renderWebpackScriptTags entryName="maps"/>
+<e:renderWebpackLinkTags entryName="maps"/>
+
+<div id="google-map">
+    <google-map google-maps-key="{settings.map.googleMaps.key}" :locations="locations" width="{settings.map.googleMaps.width}" height="{settings.map.googleMaps.height}"></google-map>
+</div>
+<ssch:address.addressToMarkers id="google-maps-config" addresses="{addresses}"/>

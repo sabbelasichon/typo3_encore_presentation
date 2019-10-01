@@ -1,0 +1,19 @@
+@import 'EXT:typo3_encore/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:tt_address/Configuration/TypoScript/constants.typoscript'
+
+plugin.tx_ttaddress {
+    view {
+        # cat=plugin.tx_ttaddress/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:typo3_webpack_encore_demo/Resources/Private/Extensions/tt_address/Templates/
+        # cat=plugin.tx_ttaddress/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:typo3_webpack_encore_demo/Resources/Private/Extensions/tt_address/Partials/
+    }
+}
+
+
+plugin.tx_typo3encore {
+    settings {
+        entrypointJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/entrypoints.json
+        manifestJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/manifest.json
+    }
+}

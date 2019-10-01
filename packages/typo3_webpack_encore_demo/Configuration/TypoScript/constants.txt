@@ -1,9 +1,0 @@
-@import 'EXT:mindshape_cookie_hint/Configuration/TypoScript/constants.txt'
-@import 'EXT:typo3_encore/Configuration/TypoScript/constants.typoscript'
-
-plugin.tx_typo3encore {
-    settings {
-        entrypointJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/entrypoints.json
-        manifestJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/manifest.json
-    }
-}
