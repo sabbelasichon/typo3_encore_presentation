@@ -18,7 +18,6 @@
         "helhum/typo3-config-handling": "^1.0@beta",
         "helhum/typo3-console": "^5.7",
         "helhum/typo3-secure-web": "^0.2.7",
-        "mindshape/mindshape_cookie_hint": "dev-master",
         "roave/security-advisories": "dev-master",
         "ssch/typo3-encore": "^1.3",
         "ssch/typo3-webpack-encore-demo": "dev-master",

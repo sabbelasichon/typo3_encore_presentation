@@ -15,6 +15,6 @@ page.includeCSS {
     custom = typo3_encore:app
 }
 
-page.includeJS {
+page.includeJSFooter {
     custom = typo3_encore:app
 }

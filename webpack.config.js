@@ -6,6 +6,7 @@ Encore
     .addEntry('app', './assets/Js/custom.js')
     .enableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
+    .enableVueLoader()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
     .autoProvidejQuery();
