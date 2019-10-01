@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e39351d349870620d08568f5afeb349d",
+    "content-hash": "88ce48983b0abe558b26eab9b52c2a5c",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -522,6 +522,63 @@
                 "php"
             ],
             "time": "2019-07-30T19:33:28+00:00"
+        },
+        {
+            "name": "friendsoftypo3/tt-address",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/tt_address.git",
+                "reference": "6c8bbfd3f85c04c3b59c415d30addbaf551ee056"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/tt_address/zipball/6c8bbfd3f85c04c3b59c415d30addbaf551ee056",
+                "reference": "6c8bbfd3f85c04c3b59c415d30addbaf551ee056",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "typo3/cms-core": "^9.5 || ^10.0"
+            },
+            "replace": {
+                "tt_address": "self.version",
+                "typo3-ter/tt-address": "self.version"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "tt_address",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfTYPO3\\TtAddress\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "tt_address Development Team",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Displays a list of addresses from an address table on the page.",
+            "homepage": "https://github.com/FriendsOfTYPO3/tt_address",
+            "keywords": [
+                "addresses",
+                "extension",
+                "typo3"
+            ],
+            "time": "2019-09-03T07:50:29+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

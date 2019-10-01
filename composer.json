@@ -15,6 +15,7 @@
         }
     },
     "require": {
+        "friendsoftypo3/tt-address": "^5.0",
         "helhum/typo3-config-handling": "^1.0@beta",
         "helhum/typo3-console": "^5.7",
         "helhum/typo3-secure-web": "^0.2.7",
