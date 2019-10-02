@@ -10,6 +10,10 @@ Encore
     .enableVueLoader()
     .enablePostCssLoader()
     .enableSassLoader()
+    // https://eslint.org/docs/user-guide/getting-started
+    .enableEslintLoader({
+        configFile: './.eslintrc.json',
+    })
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
     .autoProvidejQuery();

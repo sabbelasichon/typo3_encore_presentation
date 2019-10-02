@@ -1,18 +1,19 @@
 import Vue from 'vue';
 import GoogleMap from './components/GoogleMap.vue';
 
+// Load config
 const configElement = document.getElementById('google-maps-config');
 
 if (configElement !== null) {
-  const config = JSON.parse(configElement.innerHTML);
+    const config = JSON.parse(configElement.innerHTML);
 
-  new Vue({
-    data: {
-      locations: config.locations,
-    },
-    el: '#google-map',
-    components: {
-      GoogleMap,
-    },
-  });
+    new Vue({
+        data: {
+            locations: config.locations,
+        },
+        el: '#google-map',
+        components: {
+            GoogleMap,
+        },
+    });
 }

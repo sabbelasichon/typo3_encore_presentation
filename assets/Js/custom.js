@@ -1,9 +1,9 @@
 import '../Css/custom.scss';
-import Vue from 'vue'
-import CookieLaw from 'vue-cookie-law'
+import Vue from 'vue';
+import CookieLaw from 'vue-cookie-law';
 
 // jQuery is needed, can you spot it?
-const $ = require('jquery');
+import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap';
 
 
