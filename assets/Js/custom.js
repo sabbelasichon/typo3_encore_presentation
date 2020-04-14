@@ -1,3 +1,4 @@
+/* eslint-disable */
 import '../Css/custom.scss';
 import Vue from 'vue';
 import CookieLaw from 'vue-cookie-law';
@@ -18,6 +19,6 @@ new Vue({
 const buttons = $('.js-button');
 buttons.on('click', function (e) {
     e.preventDefault();
-    alert('Button is clicked');
+    alert('Button is clicked yeah.');
 });
 

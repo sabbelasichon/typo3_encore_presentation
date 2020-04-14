@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const CALLBACK_NAME = 'gmapsCallback';
 
 let initialized = !!window.google;
