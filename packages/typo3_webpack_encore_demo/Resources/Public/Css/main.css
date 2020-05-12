@@ -1,0 +1,12 @@
+::placeholder {
+    color: gray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("../images/tile.png");
+}
+
+main {
+    margin: 40px 0 0 0;
+}

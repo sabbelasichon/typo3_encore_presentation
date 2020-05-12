@@ -7,3 +7,7 @@ BE:
 MAIL:
     transport: 'mbox'
     transport_mbox_file: '%env(TYPO3_PATH_COMPOSER_ROOT)%/var/log/sent-mails.log'
+SYS:
+    cacheConfigurations:
+        typo3_encore:
+            backend: 'TYPO3\CMS\Core\Cache\Backend\NullBackend'

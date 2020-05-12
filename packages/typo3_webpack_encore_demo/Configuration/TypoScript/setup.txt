@@ -1,4 +1,4 @@
-@import 'EXT:mindshape_cookie_hint/Configuration/TypoScript/setup.txt'
+@import 'EXT:typo3_webpack_encore_demo/Configuration/TypoScript/libs/*.typoscript'
 
 page = PAGE
 page {
@@ -6,12 +6,24 @@ page {
     10 = FLUIDTEMPLATE
     10 {
         layoutRootPath = EXT:typo3_webpack_encore_demo/Resources/Private/Layouts/
-        file = EXT:typo3_webpack_encore_demo/Resources/Private/Templates/Main.html
+        file.stdWrap.cObject = CASE
+        file.stdWrap.cObject {
+            key.data = page:uid
+            default = TEXT
+            default.value = EXT:typo3_webpack_encore_demo/Resources/Private/Templates/Main.html
+            2 < .default
+            2.value = EXT:typo3_webpack_encore_demo/Resources/Private/Templates/Video.html
+            4 < .default
+            4.value = EXT:typo3_webpack_encore_demo/Resources/Private/Templates/VueJs.html
+        }
+        variables {
+            mainNavigation =< lib.mainNavigation
+        }
     }
 }
 
 page.includeCSS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Css/custom.css
+    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Css/main.css
 }
 
 page.includeCSSLibs {
@@ -19,7 +31,7 @@ page.includeCSSLibs {
 }
 
 page.includeJS {
-    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Js/custom.js
+    custom = EXT:typo3_webpack_encore_demo/Resources/Public/Js/main.js
 }
 
 page.includeJSLibs {
@@ -34,3 +46,13 @@ page.includeJSLibs {
         crossorigin = anonymous
     }
 }
+
+[page["uid"] == 2]
+    page.includeCSSLibs.videojs = https://vjs.zencdn.net/7.8.2/video-js.css
+    page.includeJSLibs.videojs = https://vjs.zencdn.net/7.8.2/video.js
+    page.includeJS.custom2 = EXT:typo3_webpack_encore_demo/Resources/Public/Js/video.js
+[end]
+
+[page["uid"] == 4]
+    page.includeJSLibs.vuejs = https://cdn.jsdelivr.net/npm/vue/dist/vue.js
+[end]

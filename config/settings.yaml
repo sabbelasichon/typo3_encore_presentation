@@ -12,6 +12,7 @@ DB:
             charset: 'utf8'
 FE:
     loginSecurityLevel: 'normal'
+    # versionNumberInFilename: ''
 GFX:
     jpg_quality: '80'
     processor: 'GraphicsMagick'

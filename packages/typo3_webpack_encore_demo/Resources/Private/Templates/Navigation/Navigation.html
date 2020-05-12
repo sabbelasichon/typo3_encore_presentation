@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{mainNavigation}">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <f:for each="{mainNavigation}" as="item">
+            <li class="nav-item{f:if(condition: item.active, then: ' active')}">
+                <a class="nav-link" href="{item.link}">{item.title}</a>
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+</html>

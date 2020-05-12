@@ -6,18 +6,15 @@
     "name": "helhum/typo3-distribution",
     "description" : "TYPO3 CMS Distribution with console and .env support",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "GPL-2.0-or-later",
     "config": {
-        "sort-packages": true,
-        "platform": {
-            "php": "7.2.0"
-        }
+        "sort-packages": true
     },
     "require": {
         "helhum/typo3-config-handling": "^1.0@beta",
         "helhum/typo3-console": "^5.7",
         "helhum/typo3-secure-web": "^0.2.7",
-        "mindshape/mindshape_cookie_hint": "dev-master",
         "roave/security-advisories": "dev-master",
         "ssch/typo3-webpack-encore-demo": "dev-master",
         "typo3-console/composer-auto-commands": "^0.3",

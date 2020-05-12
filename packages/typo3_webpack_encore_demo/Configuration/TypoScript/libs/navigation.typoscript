@@ -1,0 +1,16 @@
+lib.mainNavigation = FLUIDTEMPLATE
+lib.mainNavigation {
+    file = EXT:typo3_webpack_encore_demo/Resources/Private/Templates/Navigation/Navigation.html
+
+    dataProcessing {
+        30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        30 {
+            entryLevel = 0
+            levels = 4
+            titleField = nav_title // title
+            expandAll = 1
+            includeNotInMenu = 0
+            as = mainNavigation
+        }
+    }
+}
