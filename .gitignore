@@ -14,3 +14,5 @@
 
 /public/*
 !/public/.htaccess
+node_modules
+_presentation
