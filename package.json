@@ -17,7 +17,8 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "video.js": "^7.8.2"
   },
   "browserslist": [
     "> 0.5%",

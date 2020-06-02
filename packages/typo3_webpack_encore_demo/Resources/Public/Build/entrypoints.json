@@ -1,16 +1,26 @@
 {
   "entrypoints": {
     "main": {
+      "js": [
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/runtime.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~main~video.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.js"
+      ],
       "css": [
         "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.css"
-      ],
+      ]
+    },
+    "video": {
       "js": [
-        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.js"
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/runtime.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~main~video.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~video.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/video.js"
+      ],
+      "css": [
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~video.css",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/video.css"
       ]
     }
-  },
-  "integrity": {
-    "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.css": "sha384-VDfi3xSR3nQ0m4gXpAJ/vLJlU/LUy0EfjYsLnZcI04eiLaA3YQl6ejBlWOzgsdn8",
-    "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.js": "sha384-c9CXF3o8G+iN7PrejsOZVwlNS/atlzLaEs0DmdM+td/PfkpsYJK1NskpUVqGHjMw"
   }
 }

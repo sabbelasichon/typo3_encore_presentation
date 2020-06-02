@@ -31,12 +31,6 @@ page.includeJS {
     custom = typo3_encore:main
 }
 
-[page["uid"] == 2]
-    page.includeCSSLibs.videojs = https://vjs.zencdn.net/7.8.2/video-js.css
-    page.includeJSLibs.videojs = https://vjs.zencdn.net/7.8.2/video.js
-    page.includeJS.custom2 = EXT:typo3_webpack_encore_demo/Resources/Public/Js/video.js
-[end]
-
 [page["uid"] == 4]
     page.includeJSLibs.vuejs = https://cdn.jsdelivr.net/npm/vue/dist/vue.js
 [end]

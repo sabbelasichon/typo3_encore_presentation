@@ -1,7 +1,11 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:e="http://typo3.org/ns/Ssch/Typo3Encore/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 
 <f:section name="main">
+    <e:renderWebpackLinkTags entryName="video" />
+    <e:renderWebpackScriptTags entryName="video" />
     <video
             id="my-video"
             class="video-js"
