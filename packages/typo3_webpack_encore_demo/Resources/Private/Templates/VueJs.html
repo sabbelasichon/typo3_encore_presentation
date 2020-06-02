@@ -1,6 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:e="http://typo3.org/ns/Ssch/Typo3Encore/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 
 <f:section name="main">
+    <e:renderWebpackScriptTags entryName="vue" />
+    <e:renderWebpackLinkTags entryName="vue" />
     <div class="jumbotron">
         <h1 class="display-4">VueJs Integration</h1>
         <hr class="my-4">
@@ -9,17 +14,4 @@
             <button v-on:click="reverseMessage">Reverse Message</button>
         </div>
     </div>
-    <script>
-        var app5 = new Vue({
-            el: '#app-5',
-            data: {
-                message: 'Hello Vue.js!'
-            },
-            methods: {
-                reverseMessage: function () {
-                    this.message = this.message.split('').reverse().join('')
-                }
-            }
-        })
-    </script>
 </f:section>

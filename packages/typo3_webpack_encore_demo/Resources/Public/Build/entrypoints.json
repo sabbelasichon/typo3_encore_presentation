@@ -21,6 +21,13 @@
         "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~video.css",
         "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/video.css"
       ]
+    },
+    "vue": {
+      "js": [
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/runtime.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vendors~vue.js",
+        "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/vue.js"
+      ]
     }
   }
 }

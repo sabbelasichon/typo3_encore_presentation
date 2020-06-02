@@ -30,7 +30,3 @@ page.includeCSS {
 page.includeJS {
     custom = typo3_encore:main
 }
-
-[page["uid"] == 4]
-    page.includeJSLibs.vuejs = https://cdn.jsdelivr.net/npm/vue/dist/vue.js
-[end]
