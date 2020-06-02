@@ -1,0 +1,9 @@
+@import 'EXT:typo3_encore/Configuration/TypoScript/constants.typoscript'
+
+plugin.tx_typo3encore {
+    settings {
+        entrypointJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/Build/entrypoints.json
+        manifestJsonPath = EXT:typo3_webpack_encore_demo/Resources/Public/Build/manifest.json
+    }
+}
+

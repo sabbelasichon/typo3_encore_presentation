@@ -1,0 +1,28 @@
+{
+  "name": "typo3_encore_presentation",
+  "version": "1.0.0",
+  "description": "Move from manual integration to use Webpack Encore",
+  "scripts": {
+    "watch": "encore dev --watch",
+    "build": "encore production",
+    "dev": "encore dev"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.30.2",
+    "autoprefixer": "^9.8.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}

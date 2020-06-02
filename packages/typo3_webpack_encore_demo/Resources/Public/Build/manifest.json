@@ -1,0 +1,5 @@
+{
+  "typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.css": "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.css",
+  "typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.js": "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/main.js",
+  "typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/images/tile.png": "/typo3conf/ext/typo3_webpack_encore_demo/Resources/Public/Build/images/tile.e6ba18cd.png"
+}

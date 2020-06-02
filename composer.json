@@ -16,6 +16,7 @@
         "helhum/typo3-console": "^5.7",
         "helhum/typo3-secure-web": "^0.2.7",
         "roave/security-advisories": "dev-master",
+        "ssch/typo3-encore": "^2.0",
         "ssch/typo3-webpack-encore-demo": "dev-master",
         "typo3-console/composer-auto-commands": "^0.3",
         "typo3/cms-adminpanel": "^9.5.7",
