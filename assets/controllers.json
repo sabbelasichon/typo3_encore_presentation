@@ -1,0 +1,7 @@
+{
+  "controllers": {
+  },
+  "entrypoints": {
+    "app": "./Js/custom.js"
+  }
+}

@@ -1,12 +1,14 @@
 /* eslint-disable */
 import '../Css/custom.scss';
+// start the Stimulus application
+
 import Vue from 'vue';
 import CookieLaw from 'vue-cookie-law';
 
 // jQuery is needed, can you spot it?
 import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap';
-
+import './../bootstrap';
 
 new Vue({
     el: '#cookie',

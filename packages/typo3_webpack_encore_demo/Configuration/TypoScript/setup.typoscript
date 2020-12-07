@@ -27,6 +27,7 @@ page {
             content < styles.content.get
         }
     }
+    bodyTagAdd = data-controller="myswup" data-theme="slide" data-animate-history-browsing="data-animate-history-browsing"
 }
 
 page.includeCSS {

@@ -1,6 +1,7 @@
 <f:layout name="Default"/>
 
 <f:section name="main">
+    <f:link.page pageUid="1" >Homepage</f:link.page>
     <div class="jumbotron">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">From manual integration to Webpack Encore</p>
@@ -12,6 +13,7 @@
             </f:link.external>
         </p>
     </div>
+    <f:link.page pageUid="2" >SWUP Me</f:link.page>
     <f:if condition="{content}">
         <f:format.raw>{content}</f:format.raw>
     </f:if>
